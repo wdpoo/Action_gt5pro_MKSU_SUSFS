@@ -176,8 +176,8 @@ jobs:
         run: |
           cd kernel_workspace/kernel_platform/common
           git clone https://github.com/ferstar/kernel_manifest.git
-          cp ./Action_gt5p_MKSU_SUSFS/patches/001-lz4.patch ./
-          cp ./Action_gt5p_MKSU_SUSFS/patches/002-zstd.patch ./
+          cp ./kernel_manifest/patches/001-lz4.patch ./
+          cp ./kernel_manifest/patches/002-zstd.patch ./
           echo "正在打其他补丁"
           patch -p1 < 001-lz4.patch
           patch -p1 < 002-zstd.patch
